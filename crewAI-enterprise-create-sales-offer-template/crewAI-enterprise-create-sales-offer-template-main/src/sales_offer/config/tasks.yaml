@@ -1,0 +1,51 @@
+analyze_customer_needs_task:
+  description: >
+    Conduct a thorough analysis of {customer_info[name]}'s needs and challenges
+    in the {customer_info[industry]} industry. Focus on their current situation,
+    pain points, and how they align with our potential solutions. Consider their
+    company size ({customer_info[size]}) and specific challenges like
+    {customer_info[current_challenges]}.
+  expected_output: >
+    A detailed report on {customer_info[name]}'s needs, challenges, and how they
+    align with our potential offerings. Include any insights that could inform
+    product selection and pricing strategy.
+
+select_products_services_task:
+  description: >
+    Based on the customer needs analysis, select the most appropriate products
+    or services from {company_info[name]}'s offerings. Consider how our
+    {company_info[products]} can address {customer_info[name]}'s challenges,
+    particularly in {customer_info[current_challenges]}. Highlight how our
+    {company_info[unique_selling_points]} provide value to the customer.
+  expected_output: >
+    A list of recommended products or services for {customer_info[name]},
+    with justifications for each selection based on the customer's needs
+    and our unique selling points.
+
+determine_pricing_task:
+  description: >
+    Develop a pricing strategy for the selected products or services. Consider
+    {customer_info[name]}'s budget range of {customer_info[budget_range]} and
+    our available {company_info[pricing_models]}. Aim for a competitive price
+    point that provides value to the customer while ensuring profitability.
+  expected_output: >
+    A detailed pricing proposal including suggested price points, any discounts
+    or bundled offerings, and justification for the pricing strategy based on
+    customer budget and market factors.
+
+compose_offer_task:
+  description: >
+    Compile all the information from previous tasks into a comprehensive and
+    compelling offer document for {customer_info[name]}. The offer should
+    clearly articulate the value proposition, selected products/services,
+    pricing, and how our solution addresses the customer's specific needs
+    in the {customer_info[industry]} industry.
+  expected_output: >
+    A structured, persuasive offer document that includes:
+    1. Executive summary
+    2. Understanding of customer needs
+    3. Proposed solutions with product/service details
+    4. Pricing and terms
+    5. Value proposition and ROI justification
+    6. Next steps and call to action
+    Use appropriate formatting to structure the document clearly.
