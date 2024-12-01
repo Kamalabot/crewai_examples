@@ -1,0 +1,23 @@
+research_task:
+  description: >
+    Conduct thorough research about {topic}. Identify emerging trends, analyze competitor
+    strategies, and gather data-driven insights. Focus on finding interesting and relevant
+    information considering the current year is 2024. Identify key performance indicators
+    (KPIs) for potential content pieces and outline possible distribution channels.
+  expected_output: >
+    A list of 10 bullet points containing the most relevant information about {topic},
+    including emerging trends, competitor strategies, and potential KPIs for content.
+  agent: researcher
+
+content_generation_task:
+  description: >
+    Based on the research provided, generate engaging and innovative content ideas for
+    {topic} that align with {company}'s brand voice and target audience preferences.
+    Produce outlines for a diverse range of content formats including blog posts,
+    social media content, infographics, and video scripts.
+  expected_output: >
+    A detailed outline of at least 5 content pieces in various formats (blog post,
+    social media content, infographic, video script, etc.) related to {topic}.
+    Each outline should include a brief description, target audience, and potential
+    distribution channels.
+  agent: content_generator
